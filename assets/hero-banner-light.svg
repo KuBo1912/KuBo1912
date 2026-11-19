@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220" width="900" height="220" role="img" aria-label="Trần Việt Dũng - CS Student at HCMUT-VNU - Quantum Computing and HPQC">
+  <defs>
+    <clipPath id="card-clip-light">
+      <rect x="0.7" y="0.7" width="898.6" height="218.6" rx="13.5"/>
+    </clipPath>
+    <linearGradient id="bg-light" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <linearGradient id="accent-grad-l" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="50%" stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#9333ea"/>
+    </linearGradient>
+    <radialGradient id="glow-center-light" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.09"/>
+      <stop offset="55%" stop-color="#6366f1" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#f8fafc" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-accent-light" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#9333ea" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#f8fafc" stop-opacity="0"/>
+    </radialGradient>
+
+    <clipPath id="type-clip-1-l">
+      <rect x="210" y="146" height="26" width="0">
+        <animate attributeName="width" values="0;470;470;0;0" keyTimes="0;0.24;0.46;0.5;1" dur="9s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+    <clipPath id="type-clip-2-l">
+      <rect x="210" y="146" height="26" width="0">
+        <animate attributeName="width" values="0;0;470;470;0" keyTimes="0;0.5;0.74;0.96;1" dur="9s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <style>
+    .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-weight: 700; fill: #0f172a; }
+    .subtitle { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-weight: 500; fill: #475569; }
+    .mono { font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+  </style>
+
+  <!-- Clipped Background, Soft Animated Ambient Gradient & Top Hairline -->
+  <g clip-path="url(#card-clip-light)">
+    <rect width="900" height="220" fill="url(#bg-light)"/>
+    <ellipse cx="380" cy="110" rx="280" ry="150" fill="url(#glow-center-light)">
+      <animate attributeName="cx" values="350;550;350" dur="14s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="560" cy="120" rx="240" ry="140" fill="url(#glow-accent-light)">
+      <animate attributeName="cx" values="570;370;570" dur="16s" repeatCount="indefinite"/>
+    </ellipse>
+    <rect x="0" y="0" width="900" height="3" fill="url(#accent-grad-l)"/>
+  </g>
+
+  <!-- Clean Rounded Border -->
+  <rect x="0.7" y="0.7" width="898.6" height="218.6" rx="13.5" fill="none" stroke="#cbd5e1" stroke-width="1.4"/>
+
+  <!-- Centered Top Affiliation Pill -->
+  <g transform="translate(332, 26)">
+    <rect x="0" y="0" width="236" height="24" rx="12" fill="#e0f2fe" stroke="#bae6fd" stroke-width="1"/>
+    <circle cx="15" cy="12" r="3.5" fill="#0284c7">
+      <animate attributeName="opacity" values="1;0.35;1" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <text x="27" y="16" class="mono" font-size="11" fill="#0369a1">HCMUT-VNU · Computer Science</text>
+  </g>
+
+  <!-- Centered Name & Subtitle -->
+  <text x="450" y="96" text-anchor="middle" class="title" font-size="38" letter-spacing="-0.6">Trần Việt Dũng</text>
+
+  <text x="450" y="124" text-anchor="middle" class="subtitle" font-size="15">
+    CS Student focusing on <tspan fill="#0284c7" font-weight="600">Quantum Computing</tspan> &amp; <tspan fill="#7c3aed" font-weight="600">HPQC</tspan>
+  </text>
+
+  <!-- Centered Minimalist Typing Box -->
+  <rect x="195" y="142" width="510" height="34" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="212" y="163" class="mono" font-size="12.5" fill="#0369a1" clip-path="url(#type-clip-1-l)">
+    &gt; Learning &amp; exploring Quantum Computing
+  </text>
+  <text x="212" y="163" class="mono" font-size="12.5" fill="#7c3aed" clip-path="url(#type-clip-2-l)">
+    &gt; Aspiring toward High-Performance Quantum Computing
+  </text>
+  <rect x="688" y="152" width="6" height="14" rx="1" fill="#0284c7">
+    <animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Centered Footer -->
+  <text x="450" y="200" text-anchor="middle" class="mono" font-size="11" fill="#64748b">
+    Ho Chi Minh City, Vietnam · Class of 2025
+  </text>
+</svg>

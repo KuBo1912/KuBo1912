@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 170" width="900" height="170" role="img" aria-label="HPQC Research Pipeline: Quantum Algorithms to Transpilation to HPC Simulation">
+  <defs>
+    <linearGradient id="pipe-bg-light" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="50%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-weight: 700; font-size: 14px; fill: #0f172a; }
+    .sub { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 10.5px; fill: #475569; }
+    .tag { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 9.5px; font-weight: 600; }
+  </style>
+
+  <rect width="900" height="170" rx="14" fill="url(#pipe-bg-light)" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="24" y="26" class="sub" fill="#64748b">HPQC ARCHITECTURE // BRIDGING QUANTUM ALGORITHMS &amp; HIGH-PERFORMANCE SIMULATION</text>
+
+  <!-- Parallel Data Buses (Stage 1 -> Stage 2) -->
+  <g stroke="#cbd5e1" stroke-width="1.5">
+    <line x1="258" y1="78" x2="334" y2="78"/>
+    <line x1="258" y1="96" x2="334" y2="96"/>
+    <line x1="258" y1="114" x2="334" y2="114"/>
+  </g>
+  <circle r="3.2" fill="#0284c7">
+    <animateMotion path="M 258 78 L 334 78" dur="2.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="3.2" fill="#4f46e5">
+    <animateMotion path="M 258 96 L 334 96" dur="2.2s" begin="0.45s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="3.2" fill="#0284c7">
+    <animateMotion path="M 258 114 L 334 114" dur="2.2s" begin="0.9s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Parallel Data Buses (Stage 2 -> Stage 3) -->
+  <g stroke="#cbd5e1" stroke-width="1.5">
+    <line x1="566" y1="78" x2="642" y2="78"/>
+    <line x1="566" y1="96" x2="642" y2="96"/>
+    <line x1="566" y1="114" x2="642" y2="114"/>
+  </g>
+  <circle r="3.2" fill="#7c3aed">
+    <animateMotion path="M 566 78 L 642 78" dur="2.2s" begin="0.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="3.2" fill="#059669">
+    <animateMotion path="M 566 96 L 642 96" dur="2.2s" begin="0.65s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="3.2" fill="#7c3aed">
+    <animateMotion path="M 566 114 L 642 114" dur="2.2s" begin="1.1s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Node 1 -->
+  <g transform="translate(24, 46)">
+    <rect width="234" height="100" rx="10" fill="#ffffff" stroke="#0284c7" stroke-opacity="0.45" stroke-width="1.4"/>
+    <rect x="14" y="14" width="68" height="18" rx="9" fill="#e0f2fe"/>
+    <text x="23" y="26" class="tag" fill="#0369a1">01 · LAYER</text>
+    <text x="14" y="54" class="title">Quantum Algorithms</text>
+    <text x="14" y="74" class="sub">QFT · Shor · QPE · VQE</text>
+    <text x="14" y="90" class="sub" fill="#64748b">Circuit Design &amp; Complexity</text>
+  </g>
+
+  <!-- Node 2 -->
+  <g transform="translate(334, 46)">
+    <rect width="232" height="100" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-opacity="0.45" stroke-width="1.4"/>
+    <rect x="14" y="14" width="68" height="18" rx="9" fill="#f3e8ff"/>
+    <text x="23" y="26" class="tag" fill="#7c3aed">02 · LAYER</text>
+    <text x="14" y="54" class="title">Transpilation &amp; Pass</text>
+    <text x="14" y="74" class="sub">Gate Fusion · Depth Min.</text>
+    <text x="14" y="90" class="sub" fill="#64748b">2-Qubit Gate Optimization</text>
+  </g>
+
+  <!-- Node 3 -->
+  <g transform="translate(642, 46)">
+    <rect width="234" height="100" rx="10" fill="#ffffff" stroke="#059669" stroke-opacity="0.45" stroke-width="1.4"/>
+    <rect x="14" y="14" width="68" height="18" rx="9" fill="#d1fae5"/>
+    <text x="23" y="26" class="tag" fill="#047857">03 · LAYER</text>
+    <text x="14" y="54" class="title">HPQC Kernel Engine</text>
+    <text x="14" y="74" class="sub">C++ · OpenMP · SIMD · GPU</text>
+    <text x="14" y="90" class="sub" fill="#64748b">O(2^n) Statevector Scaling</text>
+  </g>
+</svg>
